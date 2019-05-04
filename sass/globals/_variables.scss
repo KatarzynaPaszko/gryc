@@ -1,0 +1,12 @@
+$maxWidth: 1240px;
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+  // border: 1px solid red;
+}
+
+.nav li {
+  display: inline-block;
+}

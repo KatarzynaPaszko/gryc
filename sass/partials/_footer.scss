@@ -1,0 +1,58 @@
+.footer {
+  background-color: $third-color;
+  color: white;
+  padding: 40px 0 0 0;
+  & .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & span {
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  & .nav {
+    padding-left: 80px;
+    & i {
+      font-size: 30px;
+      color: white;
+      padding-right: 20px;
+    }
+    & li:hover i {
+      color: $second-color;
+    }
+  }
+}
+@media only screen and (max-width: 970px) {
+  .footer nav  {
+    position: relative;
+    bottom: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: white;
+    padding: 40px 40%;
+    // max-width: 300px;
+    overflow: hidden;
+    &:before {
+      content: "";
+      width: 100%;
+      height: auto;
+      background-color: white;
+    }
+    & .nav {
+      padding-right: 120px;
+      padding-left: 0;
+      min-width: 300px;
+      & i {
+        color: $third-color;
+      }
+      & li:hover i {
+        color: $second-color;
+      }
+    }
+
+  }
+}
